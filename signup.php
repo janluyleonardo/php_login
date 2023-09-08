@@ -11,11 +11,17 @@
     $password = password_hash($_POST['password'], PASSWORD_BCRYPT);
     $stmt->bindParam(':password', $password);
 
-    if ($stmt->execute()) {
-      $message = 'Successfully created new user';
-    } else {
-      $message = 'Sorry there must have been an issue creating your account';
-    }
+  try {
+    $stmt->execute();
+    $message = 'Successfully created new user';
+  } catch (PDOException $th) {
+    $message = 'Sorry there must have been an issue creating your account' . $th;
+  }
+    // if ($stmt->execute()) {
+    //   $message = 'Successfully created new user';
+    // } else {
+    //   $message = 'Sorry there must have been an issue creating your account';
+    // }
   }
 ?>
 <!DOCTYPE html>
