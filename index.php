@@ -44,12 +44,12 @@ if (isset($_SESSION['user_id'])) {
       <div class="row">
         <div class="col-md-3 m-auto">
           <div class="card">
-            <h5 class="card-header text-center">Please Login or SignUp</h5>
+            <h5 class="card-header text-center">Please Signin or SignUp</h5>
             <div class="card-body">
               <div class="text-center">
                 <img src="images/login.gif" alt="" width="227">
                 <div class="col-md-12">
-                  <a href="login.php" class="btn btn-lg btn-primary" width="50%">Login</a>
+                  <a href="login.php" class="btn btn-lg btn-primary" width="50%">Singin</a>
                   <a href="signup.php" class="btn btn-lg btn-primary" width="50%">SignUp</a>
                 </div>
               </div>
