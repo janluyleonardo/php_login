@@ -32,16 +32,36 @@ if (isset($_SESSION['user_id'])) {
   <?php require 'partials/header.php' ?>
 
   <?php if (!empty($user)) : ?>
-    <br> Welcome. <?= $user['email']; ?>
-    <br>You are Successfully Logged In
+
+    <div class="alert alert-success" role="alert">
+      You are Successfully Logged In
+    </div>
     <a href="logout.php">
       Logout
     </a>
   <?php else : ?>
-    <h1>Please Login or SignUp</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 m-auto">
+          <div class="card">
+            <h5 class="card-header text-center">Please Login or SignUp</h5>
+            <div class="card-body">
+              <div class="text-center">
+                <img src="images/login.gif" alt="" width="227">
+                <div class="col-md-12">
+                  <a href="login.php" class="btn btn-lg btn-primary" width="50%">Login</a>
+                  <a href="signup.php" class="btn btn-lg btn-primary" width="50%">SignUp</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <h1></h1>
 
-    <a href="login.php">Login</a> or
-    <a href="signup.php">SignUp</a>
+    <a href="login.php"></a> or
+    <a href="signup.php"></a> -->
   <?php endif; ?>
   <script src="js/bootstrap.js"></script>
   <script src="js/bootstrap.bundle.js"></script>
