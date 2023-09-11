@@ -80,6 +80,11 @@ if (!empty($_POST['email']) && !empty($_POST['password'])) {
                 <button type="submit" class="btn btn-outline-primary btn-md btn-block mb-4">Sign in</button>
               </div>
             </form>
+            <!-- Register buttons -->
+            <p class="text-center mt-0">
+              already registered?? <a href="login.php">Sign In</a><br>
+              or sign up with:
+            </p>
           </div>
           <div class="card-footer">
             <div class="row">
