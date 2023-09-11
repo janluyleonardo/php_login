@@ -81,7 +81,7 @@ if (!empty($_POST['email']) && !empty($_POST['password'])) {
             </form>
             <!-- Register buttons -->
             <p class="text-center mt-0">
-              Not a member? <a href="signup.php">Register</a><br>
+              Not a member? <a href="signup.php">Sign Up</a><br>
               or sign up with:
             </p>
           </div>
