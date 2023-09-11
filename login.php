@@ -89,7 +89,7 @@ if (!empty($_POST['email']) && !empty($_POST['password'])) {
             <div class="row">
               <div class="col-md-1 m-auto">
                 <button type="button" class="btn btn-link btn-lg btn-floating mx-1">
-                  <i class="bi bi-facebook" width="100"></i>
+                  <i class="bi bi-facebook"></i>
                 </button>
               </div>
               <div class="col-md-1 m-auto">
